@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+html, body {
+  font-family: 'Open Sans', sans-serif; }
+
+#navbar {
+  width: 300px;
+  min-width: 290px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: -45px;
+  margin-top: -25px; }
+  #navbar ul .JSD, #navbar ul a li {
+    border-right: 3px solid #6d6b6b; }
+  #navbar .JSD {
+    font-size: 1.6rem;
+    padding: 20px;
+    font-weight: bold;
+    border: 1px solid #ccc; }
+  #navbar a {
+    list-style: none;
+    text-decoration: none;
+    color: #000; }
+    #navbar a li {
+      padding: 5px 3px 5px 10px;
+      border: 1px solid #6d6b6b; }
