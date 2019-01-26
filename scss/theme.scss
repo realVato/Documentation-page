@@ -1,5 +1,6 @@
 //Navbar variables
 $border-color: rgb(109, 107, 107);
+$navbar-color: #2F2F2F;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 html , body {
@@ -16,7 +17,7 @@ html , body {
     left: 0;
     margin-left: -45px;
     border-right: 4px solid $border-color;
-    background-color: #2F2F2F;
+    background-color: $navbar-color;
 
     .JSD {
         font-size: 1.6rem;
@@ -48,6 +49,10 @@ html , body {
     padding: 20px 0px;
     margin-bottom: 150px;
 
+    article {
+        padding: 10px;
+    }
+
     code {
         display: block;
         text-align: left;
@@ -57,33 +62,69 @@ html , body {
         word-wrap: normal;
         line-height: 2;
         background-color: #f7f7f7;
+        padding: 15px;
+        margin: 10px;
         border-radius: 5px;
       }
 
     header {
-        font-size: 1.4rem;
-        padding: 20px;
+        font-size: 1.5rem;
         font-weight: bold;
     } 
 }
 
 //Query
 @media (max-width: 800px) {
-    #navbar {
-        max-height: 400px;
-        width: 100%;
-        margin: 0 auto;
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
     }
 
-    #navbar ul a #declaring_variables,
-    #navbar ul a #variable_scope,
-    #navbar ul a #global_variables,
-    #navbar ul a #constants,
-    #navbar ul a #data_types,
-    #navbar ul a #if_else_statement,
-    #navbar ul a #while_statement,
-    #navbar ul a #function_declarations,
-    #navbar ul a #reference {
-        display: none;
+    #navbar-query {
+        width: 100%;
+        background-color: $navbar-color;
+        min-height: 60px;
+
+        #JSD-query {
+            width: 100vw;
+            text-align: center;
+            line-height: 4rem;
+            font-size: 1.7rem;
+            color: #fff;
+
+            span {
+                color: orange;
+            }
+        }
+    }
+
+    #navbar {
+        max-height: 200px;
+        width: 100%;
+        margin: 60px auto 0px;
+        z-index: 1;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+
+        .JSD {
+            display: none;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid $border-color;
+        }
+
+    }
+
+    #main-doc {
+        width: 100%;
+        margin: 230px auto 0px;
+        text-align: center;
     }
 }

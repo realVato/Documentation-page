@@ -32,6 +32,8 @@ html, body {
   margin-left: 300px;
   padding: 20px 0px;
   margin-bottom: 150px; }
+  #main-doc article {
+    padding: 10px; }
   #main-doc code {
     display: block;
     text-align: left;
@@ -41,24 +43,44 @@ html, body {
     word-wrap: normal;
     line-height: 2;
     background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
     border-radius: 5px; }
   #main-doc header {
-    font-size: 1.4rem;
-    padding: 20px;
+    font-size: 1.5rem;
     font-weight: bold; }
 
 @media (max-width: 800px) {
-  #navbar {
-    max-height: 400px;
+  body {
+    margin: 0;
+    overflow-x: hidden; }
+  #navbar-query {
     width: 100%;
-    margin: 0 auto; }
-  #navbar ul a #declaring_variables,
-  #navbar ul a #variable_scope,
-  #navbar ul a #global_variables,
-  #navbar ul a #constants,
-  #navbar ul a #data_types,
-  #navbar ul a #if_else_statement,
-  #navbar ul a #while_statement,
-  #navbar ul a #function_declarations,
-  #navbar ul a #reference {
-    display: none; } }
+    background-color: #2F2F2F;
+    min-height: 60px; }
+    #navbar-query #JSD-query {
+      width: 100vw;
+      text-align: center;
+      line-height: 4rem;
+      font-size: 1.7rem;
+      color: #fff; }
+      #navbar-query #JSD-query span {
+        color: orange; }
+  #navbar {
+    max-height: 200px;
+    width: 100%;
+    margin: 60px auto 0px;
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute; }
+    #navbar .JSD {
+      display: none; }
+    #navbar ul {
+      padding: 0; }
+    #navbar li {
+      border: 1px solid #6d6b6b; }
+  #main-doc {
+    width: 100%;
+    margin: 230px auto 0px;
+    text-align: center; } }
